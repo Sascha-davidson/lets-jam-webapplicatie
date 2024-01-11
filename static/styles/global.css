@@ -60,7 +60,7 @@
 
 body {
 	display: flex;
-	background-color: #f4f5fa;
+	background-color: var(--background-color);
 	height: 100vh;
 }
 
@@ -75,7 +75,7 @@ h2 {
 
 h3 {
     font-family: var(--primary-font-family);
-    font-size: clamp(1rem, 4.2vw, 1.5rem);
+    font-size: clamp(1rem, 4.2vw, 2rem);
     font-weight: 800;
     color: var(--primary-font-color);
 }

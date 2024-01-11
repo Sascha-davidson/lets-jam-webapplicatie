@@ -6,4 +6,10 @@
 	<NavigationBar />
 </header>
 
-	<slot />
+<slot />
+
+<style>
+	header {
+		height: 100%;
+	}
+</style>
