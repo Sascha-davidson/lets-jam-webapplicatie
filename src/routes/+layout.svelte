@@ -1,9 +1,9 @@
 <script>
-	import NavigationBar from '$lib/organisms/NavigationBar.svelte';
+	import { Navigationbar } from '$lib';
 </script>
 
 <header>
-	<NavigationBar />
+	<Navigationbar />
 </header>
 
 <slot />

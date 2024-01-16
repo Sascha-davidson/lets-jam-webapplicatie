@@ -1,12 +1,12 @@
 <script>
-	import NavItem from '$lib/molecules/NavItem.svelte';
+	import { NavItem } from '$lib';
 
 	let items = [
-		{ icon: 'home', label: 'Home', href: '/' },
-		{ icon: 'players', label: 'Players', href: '/players' },
-		{ icon: 'teams', label: 'Teams', href: '/teams' },
-		{ icon: 'tournaments', label: 'Tournaments', href: '/tournaments' }
-		// { icon: 'live', label: 'Live', href: '/live' }
+		{ icon: 'Home', label: 'Home', href: '/' },
+		{ icon: 'Players', label: 'Players', href: '/players' },
+		{ icon: 'Teams', label: 'Teams', href: '/teams' },
+		{ icon: 'Tournaments', label: 'Tournaments', href: '/tournaments' }
+		// { icon: 'Live', label: 'Live', href: '/live' }
 	];
 </script>
 
@@ -37,8 +37,8 @@
 		list-style: none;
 	}
 
-	@media only screen and (max-width: 500px){
-		nav{
+	@media only screen and (max-width: 500px) {
+		nav {
 			display: none;
 		}
 	}

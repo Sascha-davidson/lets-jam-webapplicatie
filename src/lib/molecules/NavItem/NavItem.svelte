@@ -1,5 +1,5 @@
 <script>
-	import Icon from '$lib/atoms/Icon.svelte';
+	import { Icon } from '$lib';
 
 	export let item;
 </script>
@@ -24,11 +24,11 @@
 		gap: 0.5em;
 		transition: 0.2s;
 		padding: 1em;
+		aspect-ratio: 1;
+		width: 100%;
 		color: var(--primary-font-color);
 		font-family: var(--secondary-font-family);
 		text-decoration: none;
-		width: 100%;
-		aspect-ratio: 1;
 	}
 
 	a:is(:hover, :focus) {
