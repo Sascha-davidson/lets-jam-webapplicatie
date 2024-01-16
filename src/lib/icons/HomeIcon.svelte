@@ -1,4 +1,8 @@
-<svg width="35" height="36" viewBox="0 0 35 36" fill="none">
+<script>
+	export let ariaHidden = true;
+</script>
+
+<svg width="35" height="36" viewBox="0 0 35 36" fill="none" aria-hidden={ariaHidden}>
 	<g clip-path="url(#clip0_504_28436)">
 		<path
 			d="M7.29167 18H4.375L17.5 4.875L30.625 18H27.7083"

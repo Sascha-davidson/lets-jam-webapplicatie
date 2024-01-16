@@ -20,6 +20,11 @@ The NavItem is a list item with an anchor and is meant to be used within the Nav
 	</ul>
 </nav>
 ```
+## Properties
+
+| Name | Type   | Default   | Description |
+| ---- | ------ | --------- | ----------- |
+| item | Object | undefined |             |
 
 ## Accessibility
 

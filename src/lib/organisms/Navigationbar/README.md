@@ -12,6 +12,10 @@ The Navigationbar is a vertical navigation component.
 <Navigationbar />
 ```
 
+## Properties
+
+None.
+
 ## Accessibility
 
 The `<Navigationbar />` component is created with the `nav` HTML element which describes that the element contains navigation. The `nav` contains an `ul` which indicates that there is a list with navigation links. The `<Navigationbar />` component imports the `<NavItem />` component. The `<NavItem />` is a `li` with an `a`. The `a` element contains an optional `<Icon />` and a `span` for the text.

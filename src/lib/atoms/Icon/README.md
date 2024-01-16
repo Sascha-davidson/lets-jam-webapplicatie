@@ -24,6 +24,13 @@ The `<Icon />` component is some sort of wrapper for the `svg` icons. The compon
 <Icon name={'Home'} ariaHidden={false} />
 ```
 
+## Properties
+
+| Name       | Type    | Default   | Description                                          |
+| ---------- | ------- | --------- | ---------------------------------------------------- |
+| name       | String  | undefined |                                                      |
+| ariaHidden | Boolean | true      | Wheter to hide the `svg` icon from the screen reader |
+
 ## Accessibility
 
 The `<Icon />` is a `<svg>`. Icons are most times purely visual and do not require an `alt` text, however every icons should contain an `alt` text, but the `svg`'s have by default an `aria-hidden="true"` property applied. If you want to set `aria-hidden` to `false` you can add `ariaHidden={false}` to the `<Icon />` tag.
