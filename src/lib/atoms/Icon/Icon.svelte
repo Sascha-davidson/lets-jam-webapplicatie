@@ -1,7 +1,9 @@
 <script>
 	export let name;
 
-	let Icon = import(`../../icons/${name}Icon.svelte`).default;
+	let getIcon = import(`../../icons/${name}Icon.svelte`);
 </script>
 
-<svelte:component this={Icon} />
+{#await getIcon then { default: Icon }}
+	<svelte:component this={Icon} />
+{/await}
