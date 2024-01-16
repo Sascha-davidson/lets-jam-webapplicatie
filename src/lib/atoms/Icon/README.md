@@ -1,4 +1,4 @@
-# NavItem
+# Icon
 
 The `<Icon />` component is some sort of wrapper for the `svg` icons. The component dynamically loads the icon with the name you provide.
 
