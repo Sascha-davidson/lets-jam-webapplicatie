@@ -11,7 +11,7 @@
 		Type="text"
 		ID="AddPlayer"
 		For="AddPlayer"
-		Text="* Add player ..."
+		Text="Add player ..."
 		Required="required"
 	/>
 
@@ -21,7 +21,7 @@
 		Type="text"
 		ID="JerseyNumber"
 		For="JerseyNumber"
-		Text="* Jersey number..."
+		Text="Jersey number..."
 		Required="required"
 	/>
 
@@ -29,7 +29,7 @@
 		Type="text"
 		ID="BirthCountry"
 		For="BirthCountry"
-		Text="* Country of birth..."
+		Text="Country of birth..."
 	/>
 	
 	<Input

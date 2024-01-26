@@ -27,6 +27,10 @@
 			closeBtn.addEventListener('click', () => {
 				newDialog.close();
 			});
+
+			submitBtn.addEventListener('click', () => {
+				newDialog.close();
+			});
 		}
 	});
 </script>
@@ -49,7 +53,7 @@
 	<DeleteForm FormID="DeleteForm" Method="get" Action="/players" />
 	<div class="ButtonContainer">
 		<Button severity="ghost" Hidden="hidden" ButtonType="button" ID="closeBtn" ButtonText="Cancel" />
-		<Button severity="warning"  ButtonType="submit" Form="DeleteForm" ButtonText="Continue" />
+		<Button severity="warning"  ButtonType="submit" ID="submitBtn" Form="DeleteForm" ButtonText="Continue" />
 	</div>
 </div>
 

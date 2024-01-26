@@ -5,73 +5,73 @@
 </script> -->
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<button>
+	<a href="/teams/edit">
 		<img src="../images/Dark Emperors.png" alt="" />
 		<label for="" class="subtitle-small">Dark Emperors</label>
-	</button>
+	</a>
 </li>
 
 <style>
@@ -79,7 +79,7 @@
 		display: flex;
 	}
 
-	button {
+	a {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -87,15 +87,16 @@
 		gap: 0.5em;
 		transition: 0.2s;
 		box-shadow: var(--box-shadow);
-		border-radius: 0.9rem;
 		border: none;
+		border-radius: 0.9rem;
 		background-color: var(--element-background-color);
 		padding: 1em;
 		aspect-ratio: 1;
 		width: 100%;
+		text-decoration: none;
 	}
 
-	button:is(:hover, :focus) {
+	a:is(:hover, :focus) {
 		background: var(--hover-background-color);
 	}
 

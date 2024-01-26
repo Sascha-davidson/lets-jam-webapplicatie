@@ -26,6 +26,10 @@
 			closeBtn.addEventListener('click', () => {
 				newDialog.close();
 			});
+
+			submitBtn.addEventListener('click', () => {
+				newDialog.close();
+			});
 		}
 	});
 </script>
@@ -45,10 +49,22 @@
 	</footer>
 </main>
 <div id="DeleteFormContainer" class="DeleteFormContainer">
-	<DeleteForm FormID="DeleteForm" Method="get" Action="/players" />
+	<DeleteForm FormID="DeleteForm" Method="get" Action="/teams" />
 	<div class="ButtonContainer">
-		<Button severity="ghost" Hidden="hidden" ButtonType="button" ID="closeBtn" ButtonText="Cancel" />
-		<Button severity="warning" ButtonType="submit" Form="DeleteForm" ButtonText="Continue" />
+		<Button
+			severity="ghost"
+			Hidden="hidden"
+			ButtonType="button"
+			ID="closeBtn"
+			ButtonText="Cancel"
+		/>
+		<Button
+			severity="warning"
+			ButtonType="submit"
+			Form="DeleteForm"
+			ID="submitBtn"
+			ButtonText="Continue"
+		/>
 	</div>
 </div>
 

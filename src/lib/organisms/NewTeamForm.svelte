@@ -10,7 +10,7 @@
 		Type="text"
 		ID="TeamName"
 		For="TeamName"
-		Text="* Team name..."
+		Text="Team name..."
 		Required="required"
 	/>
 

@@ -21,6 +21,7 @@
 		ID="CountryOfOrigin"
 		For="CountryOfOrigin"
 		Text="Country of origin"
+		Value="Japan"
 		Hidden="hidden"
 	/>
 

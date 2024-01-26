@@ -1,14 +1,18 @@
 <script>
 	import Link from '$lib/atoms/Link.svelte';
 	import TeamCard from '$lib/molecules/TeamCard.svelte';
+	import Input from '$lib/atoms/input-NoLabel.svelte';
 </script>
 
 <main>
 	<h1>All Teams</h1>
 
 	<h2 class="sub-header-left">Add and change teams</h2>
+	<div class="search">
+		<Input Type="text" ID="SearchTeam" For="SearchTeam" Text="Search" placeholder="search" />
+	</div>
 	<div class="NewTeams">
-		<Link severity="primary-button" Routing="Teams/new" Text="+ new team" />
+		<Link severity="primary-button" Routing="teams/new" Text="+ New team" />
 	</div>
 	<div class="CardContainer">
 		<ul>
@@ -20,12 +24,13 @@
 <style>
 	main {
 		display: grid;
-		grid-template-rows: auto auto 1fr;
+		grid-template-rows: auto auto auto 1fr;
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			'h1 h1'
 			'NewTeams NewTeams'
 			'h2 h2'
+			'search search'
 			'CartContainer CartContainer';
 		row-gap: 1rem;
 		transition: all 0.3s ease-in-out;
@@ -46,8 +51,8 @@
 
 	.CardContainer {
 		grid-area: CartContainer;
-		margin: -10px;
-		padding: 10px;
+		margin: -3px -10px -10px -10px;
+		padding: 3px 10px 10px 10px;
 		/* margin-right: 0; */
 		height: 100%;
 		overflow-x: hidden;
@@ -57,6 +62,12 @@
 	.NewTeams {
 		display: flex;
 		grid-area: NewTeams;
+		align-items: center;
+		height: 100%;
+	}
+
+	.search {
+		grid-area: search;
 	}
 
 	ul {
@@ -92,10 +103,11 @@
 
 	@media only screen and (min-width: 660px) {
 		main {
-			grid-template-columns: 1fr auto;
+			grid-template-columns: 1fr 1fr;
 			grid-template-areas:
 				'h1 h1'
-				'h2 NewTeams'
+				'h2 h2'
+				'search NewTeams'
 				'CartContainer CartContainer';
 			column-gap: 2rem;
 			padding: 4rem 4%;
@@ -103,7 +115,6 @@
 
 		.NewTeams {
 			justify-content: flex-end;
-			height: fit-content;
 		}
 	}
 
